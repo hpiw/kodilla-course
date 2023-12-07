@@ -1,14 +1,13 @@
-package com.kodilla.stream;
+package com.kodilla.testing.collection;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KodillaStreamApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(KodillaStreamApplication.class, args);
-        System.out.println("Welcome to module 7 – Stream");
+        SpringApplication.run(Application.class, args);
     }
 
 }
