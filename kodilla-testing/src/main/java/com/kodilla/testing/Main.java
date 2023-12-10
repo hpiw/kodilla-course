@@ -14,4 +14,8 @@ public class Main {
             System.out.println("Error!");
         }
     }
+
+    public static double currencySpot() {
+        return 3.92;
+    }
 }

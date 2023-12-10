@@ -9,11 +9,11 @@ class ShapeTest {
     @Test
     void getShapeName() {
         // Given
-        Shape rectangle = new Rectangle();
+        Shape rectangle = new Circle();
         // When
         String result = rectangle.getShapeName();
         // Then
-        assertEquals("Rectangle", result);
+        assertEquals("Circle", result);
     }
 
     @Test
