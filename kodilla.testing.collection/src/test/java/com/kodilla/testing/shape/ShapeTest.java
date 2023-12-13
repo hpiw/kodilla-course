@@ -9,14 +9,24 @@ class ShapeTest {
     @Test
     void getShapeName() {
         // Given
-        Shape rectangle = new Circle();
+        Shape circle = new Circle();
         // When
-        String result = rectangle.getShapeName();
+        String result = circle.getShapeName();
         // Then
         assertEquals("Circle", result);
     }
 
     @Test
     void getField() {
+    }
+    public void testAddFigure() {
+        // Given
+        Shape shape = new Circle();
+
+        // When
+        ShapeCollector.addFigure(shape);
+
+        // Then
+        assertEquals(1, ShapeCollector.getShapesQuantity());
     }
 }

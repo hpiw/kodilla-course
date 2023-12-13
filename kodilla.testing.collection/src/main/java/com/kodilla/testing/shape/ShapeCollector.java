@@ -3,13 +3,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShapeCollector {
-    public List<Shape> shapes;
+    public static List<Shape> shapes;
 
     public ShapeCollector() {
         this.shapes = new ArrayList<>();
     }
 
-    public void addFigure(Shape shape) {
+    public static void addFigure(Shape shape) {
         shapes.add(shape);
     }
 
@@ -34,7 +34,7 @@ public class ShapeCollector {
         return result.toString();
     }
 
-    public int getShapesQuantity() {
+    public static int getShapesQuantity() {
         return shapes.size();
     }
 }
