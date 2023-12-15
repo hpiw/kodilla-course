@@ -1,30 +1,33 @@
 package com.kodilla.testing.collection;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class CollectionTestSuite {
-
-@BeforeEach
-    public void before() {
-            exterminator = new OddNumbersExterminator();
-            System.out.println("Preparing test..");
-            }
-@AfterEach
-    public void after() {
-            System.out.println("Test complete.");
-            }
-
 
     private OddNumbersExterminator exterminator;
 
+    @BeforeEach
+    public void before() {
+        exterminator = new OddNumbersExterminator();
+        System.out.println("Preparing test..");
+    }
+
+    @AfterEach
+    public void after() {
+        System.out.println("Test complete.");
+    }
 
     @DisplayName("Testing empty list within exterminate() method")
     @Test
-
     void testOddNumbersExterminatorEmptyList() {
         // Given
         List<Integer> emptyList = new ArrayList<>();
