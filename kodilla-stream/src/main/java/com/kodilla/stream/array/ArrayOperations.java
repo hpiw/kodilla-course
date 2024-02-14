@@ -8,9 +8,8 @@ public interface ArrayOperations {
                 .mapToObj(i -> numbers[i])
                 .forEach(System.out::println);
 
-        return IntStream.range(0, numbers.length)
-                .map(i -> numbers[i])
-                .average()
-                .getAsDouble();
+        return java.util.Arrays.stream(numbers, 0, numbers.length)
+                .average().orElse(0.0);
+
     }
 }
