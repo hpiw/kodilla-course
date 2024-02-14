@@ -15,7 +15,7 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class BookDirectoryTestSuite {
-    //...
+
     private List<Book> generateListOfNBooks(int booksQuantity) {
         List<Book> resultList = new ArrayList<>();
         for (int n = 1; n <= booksQuantity; n++) {
@@ -24,7 +24,7 @@ class BookDirectoryTestSuite {
         }
         return resultList;
     }
-    // ...
+
 
 
     @Mock
