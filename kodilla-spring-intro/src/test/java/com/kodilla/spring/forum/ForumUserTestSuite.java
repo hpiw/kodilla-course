@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
-@SpringBootTest
+@SpringBootTest(classes = {ForumUser.class})
 class ForumUserTestSuite {
     @Autowired
-        private ForumUser forumUser;
+    private ForumUser forumUser;
 
     @Test
     @DisplayName("ForumUserTest")
@@ -19,6 +19,6 @@ class ForumUserTestSuite {
         // When
 
         // Then
-        assertEquals("Circle", forumUser.getUsername());
+        assertEquals("John Smith", forumUser.getUsername());
     }
 }
